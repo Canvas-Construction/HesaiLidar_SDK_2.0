@@ -152,7 +152,7 @@ class PcapSource : public Source{
 public:
     using Callback = std::function<int(const uint8_t*, uint32_t)>;
 public:
-    struct Private;
+    class Private;
 private:
     Private* _p;
     std::string pcap_path_;
